@@ -259,7 +259,6 @@ func (r Search) Perform(providedCtx context.Context) (*http.Response, error) {
 
 // Do runs the request through the transport, handle the response and returns a search.Response
 func (r Search) Do(providedCtx context.Context) (*Response, error) {
-	timeNow := time.Now()
 	var ctx context.Context
 	r.spanStarted = true
 	if instrument, ok := r.instrument.(elastictransport.Instrumentation); ok {
@@ -274,8 +273,7 @@ func (r Search) Do(providedCtx context.Context) (*Response, error) {
 
 	r.TypedKeys(true)
 
-	fmt.Printf("[search.Do] PREPARATION: %s", time.Since(timeNow).String())
-	timeNow = time.Now()
+	timeNow := time.Now()
 
 	res, err := r.Perform(ctx)
 	if err != nil {
@@ -286,7 +284,7 @@ func (r Search) Do(providedCtx context.Context) (*Response, error) {
 	}
 	defer res.Body.Close()
 
-	fmt.Printf("[search.Do] PERFORM: %s", time.Since(timeNow).String())
+	fmt.Printf("[search.Do] PERFORM: %s\n", time.Since(timeNow).String())
 	timeNow = time.Now()
 
 	if res.StatusCode < 299 {
@@ -298,11 +296,9 @@ func (r Search) Do(providedCtx context.Context) (*Response, error) {
 			return nil, err
 		}
 
+		fmt.Printf("[search.Do] DECODE: %s\n", time.Since(timeNow).String())
 		return response, nil
 	}
-
-	fmt.Printf("[search.Do] DECODE: %s", time.Since(timeNow).String())
-	timeNow = time.Now()
 
 	errorResponse := types.NewElasticsearchError()
 	err = json.NewDecoder(res.Body).Decode(errorResponse)
@@ -321,8 +317,7 @@ func (r Search) Do(providedCtx context.Context) (*Response, error) {
 		instrument.RecordError(ctx, errorResponse)
 	}
 
-	fmt.Printf("[search.Do] FINISHING: %s", time.Since(timeNow).String())
-	timeNow = time.Now()
+	fmt.Printf("[search.Do] IF ERROR: %s\n", time.Since(timeNow).String())
 	return nil, errorResponse
 }
 
