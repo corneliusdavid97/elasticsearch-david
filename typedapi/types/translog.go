@@ -27,7 +27,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/translogdurability"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/translogdurability"
 )
 
 // Translog type.

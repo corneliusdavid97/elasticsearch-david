@@ -21,7 +21,7 @@
 package types
 
 import (
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/shutdownstatus"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/shutdownstatus"
 )
 
 // PersistentTaskStatus type.

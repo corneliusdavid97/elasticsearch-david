@@ -28,8 +28,8 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/dynamicmapping"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/timeseriesmetrictype"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/dynamicmapping"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/timeseriesmetrictype"
 )
 
 // AggregateMetricDoubleProperty type.

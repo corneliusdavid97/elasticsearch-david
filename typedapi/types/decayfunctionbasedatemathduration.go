@@ -24,7 +24,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/multivaluemode"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/multivaluemode"
 )
 
 // DecayFunctionBaseDateMathDuration type.

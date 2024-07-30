@@ -28,7 +28,7 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/termsaggregationexecutionhint"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/termsaggregationexecutionhint"
 )
 
 // SignificantTermsAggregation type.

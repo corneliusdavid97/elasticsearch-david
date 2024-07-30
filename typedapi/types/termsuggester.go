@@ -28,9 +28,9 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/stringdistance"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/suggestmode"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/suggestsort"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/stringdistance"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/suggestmode"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/suggestsort"
 )
 
 // TermSuggester type.

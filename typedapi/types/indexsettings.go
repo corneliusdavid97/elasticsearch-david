@@ -28,7 +28,7 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/indexcheckonstartup"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/indexcheckonstartup"
 )
 
 // IndexSettings type.

@@ -23,7 +23,7 @@ package containertest
 import (
 	"context"
 
-	"github.com/elastic/go-elasticsearch/v8"
+	"github.com/corneliusdavid97/go-elasticsearch/v8"
 
 	"github.com/testcontainers/testcontainers-go"
 	tces "github.com/testcontainers/testcontainers-go/modules/elasticsearch"

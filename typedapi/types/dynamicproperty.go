@@ -28,11 +28,11 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/dynamicmapping"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/indexoptions"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/onscripterror"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/termvectoroption"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/timeseriesmetrictype"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/dynamicmapping"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/indexoptions"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/onscripterror"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/termvectoroption"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/timeseriesmetrictype"
 )
 
 // DynamicProperty type.

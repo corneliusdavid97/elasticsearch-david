@@ -28,10 +28,10 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/missingorder"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/sortorder"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/termsaggregationcollectmode"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/termsaggregationexecutionhint"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/missingorder"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/sortorder"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/termsaggregationcollectmode"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/termsaggregationexecutionhint"
 )
 
 // TermsAggregation type.

@@ -28,8 +28,8 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/healthstatus"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/managedby"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/healthstatus"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/managedby"
 )
 
 // DataStream type.

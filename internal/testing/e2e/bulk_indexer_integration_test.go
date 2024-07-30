@@ -31,9 +31,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/corneliusdavid97/go-elasticsearch/v8"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/esutil"
 	"github.com/elastic/elastic-transport-go/v8/elastictransport"
-	"github.com/elastic/go-elasticsearch/v8"
-	"github.com/elastic/go-elasticsearch/v8/esutil"
 
 	"testing/containertest"
 )

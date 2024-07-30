@@ -21,7 +21,7 @@
 package types
 
 import (
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/numericfielddataformat"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/numericfielddataformat"
 )
 
 // NumericFielddata type.

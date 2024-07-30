@@ -32,10 +32,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi"
 
-	"github.com/elastic/go-elasticsearch/v8/esapi"
-	"github.com/elastic/go-elasticsearch/v8/internal/version"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/esapi"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/internal/version"
 
 	"github.com/elastic/elastic-transport-go/v8/elastictransport"
 	tpversion "github.com/elastic/elastic-transport-go/v8/elastictransport/version"

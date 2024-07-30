@@ -27,8 +27,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/optype"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/refresh"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/optype"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/refresh"
 )
 
 // IndexAction type.

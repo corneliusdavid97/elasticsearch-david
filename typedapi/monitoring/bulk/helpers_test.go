@@ -23,7 +23,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types"
 )
 
 func TestBulk_CreateOp(t *testing.T) {

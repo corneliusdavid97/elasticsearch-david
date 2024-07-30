@@ -34,10 +34,10 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/expandwildcard"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/level"
 	"github.com/elastic/elastic-transport-go/v8/elastictransport"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/expandwildcard"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/level"
 )
 
 const (

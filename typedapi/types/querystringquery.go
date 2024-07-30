@@ -28,8 +28,8 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/operator"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/textquerytype"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/operator"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/textquerytype"
 )
 
 // QueryStringQuery type.

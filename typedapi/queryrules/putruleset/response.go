@@ -21,7 +21,7 @@
 package putruleset
 
 import (
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/result"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/result"
 )
 
 // Response holds the response body struct for the package putruleset

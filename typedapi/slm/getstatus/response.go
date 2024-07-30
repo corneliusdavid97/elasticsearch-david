@@ -21,7 +21,7 @@
 package getstatus
 
 import (
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/lifecycleoperationmode"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/lifecycleoperationmode"
 )
 
 // Response holds the response body struct for the package getstatus

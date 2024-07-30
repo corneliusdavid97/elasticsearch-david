@@ -28,10 +28,10 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/icucollationalternate"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/icucollationcasefirst"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/icucollationdecomposition"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/icucollationstrength"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/icucollationalternate"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/icucollationcasefirst"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/icucollationdecomposition"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/icucollationstrength"
 )
 
 // IcuCollationTokenFilter type.

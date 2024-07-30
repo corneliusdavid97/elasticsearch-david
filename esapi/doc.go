@@ -19,7 +19,7 @@
 Package esapi provides the Go API for Elasticsearch.
 
 It is automatically included in the client provided by the
-github.com/elastic/go-elasticsearch package:
+github.com/corneliusdavid97/go-elasticsearch package:
 
 	es, _ := elasticsearch.NewDefaultClient()
 	res, _ := es.Info()
@@ -73,13 +73,13 @@ It has a minor overhead compared to using a struct directly;
 refer to the esapi_benchmark_test.go suite for concrete numbers.
 
 See the documentation for each API function or struct at
-https://pkg.go.dev/github.com/elastic/go-elasticsearch,
+https://pkg.go.dev/github.com/corneliusdavid97/go-elasticsearch,
 or locally by:
 
-	go doc github.com/elastic/go-elasticsearch/v8/esapi Index
-	go doc github.com/elastic/go-elasticsearch/v8/esapi IndexRequest
+	go doc github.com/corneliusdavid97/go-elasticsearch/v8/esapi Index
+	go doc github.com/corneliusdavid97/go-elasticsearch/v8/esapi IndexRequest
 
-Response
+# Response
 
 The esapi.Response type is a lightweight wrapper around http.Response.
 
@@ -93,7 +93,7 @@ The Response type implements a couple of convenience methods for accessing
 the status, checking an error status code or printing
 the response body for debugging purposes.
 
-Additional Information
+# Additional Information
 
 See the Elasticsearch documentation at
 https://www.elastic.co/guide/en/elasticsearch/reference/master/api-conventions.html for detailed information
@@ -102,11 +102,10 @@ about the API endpoints and parameters.
 The Go API is generated from the Elasticsearch JSON specification at
 https://github.com/elastic/elasticsearch/tree/master/rest-api-spec/src/main/resources/rest-api-spec/api
 by the internal package available at
-https://github.com/elastic/go-elasticsearch/tree/master/internal/cmd/generate/commands/gensource.
+https://github.com/corneliusdavid97/go-elasticsearch/tree/master/internal/cmd/generate/commands/gensource.
 
 The API is tested by integration tests common to all Elasticsearch official clients, generated from the
 source at https://github.com/elastic/elasticsearch/tree/master/rest-api-spec/src/main/resources/rest-api-spec/test.
 The generator is provided by the internal package available at internal/cmd/generate/commands/gentests.
-
 */
 package esapi

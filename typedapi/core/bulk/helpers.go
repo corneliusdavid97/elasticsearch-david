@@ -21,7 +21,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types"
 )
 
 // CreateOp is a helper function to add a CreateOperation to the current bulk request.

@@ -27,8 +27,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/clusterprivilege"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/clusterprivilege"
 )
 
 // Request holds the request body struct for the package putrole

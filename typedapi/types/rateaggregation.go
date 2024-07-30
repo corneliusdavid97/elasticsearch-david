@@ -28,8 +28,8 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/calendarinterval"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/ratemode"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/calendarinterval"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/ratemode"
 )
 
 // RateAggregation type.

@@ -43,12 +43,12 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/expandwildcard"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/operator"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/searchtype"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/suggestmode"
 	"github.com/elastic/elastic-transport-go/v8/elastictransport"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/expandwildcard"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/operator"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/searchtype"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/suggestmode"
 )
 
 const (

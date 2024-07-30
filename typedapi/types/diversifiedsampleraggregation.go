@@ -28,7 +28,7 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/sampleraggregationexecutionhint"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/sampleraggregationexecutionhint"
 )
 
 // DiversifiedSamplerAggregation type.

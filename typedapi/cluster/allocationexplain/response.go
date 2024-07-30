@@ -21,8 +21,8 @@
 package allocationexplain
 
 import (
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/decision"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/decision"
 )
 
 // Response holds the response body struct for the package allocationexplain

@@ -21,7 +21,7 @@
 package getdatafeeds
 
 import (
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types"
 )
 
 // Response holds the response body struct for the package getdatafeeds

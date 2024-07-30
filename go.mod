@@ -1,6 +1,7 @@
 module github.com/corneliusdavid97/go-elasticsearch/v8
 
 go 1.21
+
 toolchain go1.21.0
 
 require (
@@ -13,5 +14,5 @@ require (
 	github.com/go-logr/stdr v1.2.2 // indirect
 	go.opentelemetry.io/otel v1.28.0 // indirect
 	go.opentelemetry.io/otel/metric v1.28.0 // indirect
-	golang.org/x/sys v0.19.0 // indirect
+	golang.org/x/sys v0.20.0 // indirect
 )

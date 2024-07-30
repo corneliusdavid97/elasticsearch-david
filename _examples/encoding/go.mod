@@ -1,6 +1,7 @@
 module github.com/elastic/go-elasticsearch/v8/_examples/encoding
 
 go 1.21
+
 toolchain go1.21.0
 
 replace github.com/elastic/go-elasticsearch/v8 => ../..
@@ -24,5 +25,5 @@ require (
 	go.opentelemetry.io/otel v1.28.0 // indirect
 	go.opentelemetry.io/otel/metric v1.28.0 // indirect
 	go.opentelemetry.io/otel/trace v1.28.0 // indirect
-	golang.org/x/sys v0.19.0 // indirect
+	golang.org/x/sys v0.20.0 // indirect
 )

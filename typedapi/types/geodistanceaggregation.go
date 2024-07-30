@@ -27,8 +27,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/distanceunit"
-	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/geodistancetype"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/distanceunit"
+	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/geodistancetype"
 )
 
 // GeoDistanceAggregation type.
