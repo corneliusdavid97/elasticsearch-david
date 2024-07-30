@@ -35,6 +35,7 @@ import (
 	"net/url"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types"
 	"github.com/corneliusdavid97/go-elasticsearch/v8/typedapi/types/enums/expandwildcard"
@@ -258,6 +259,7 @@ func (r Search) Perform(providedCtx context.Context) (*http.Response, error) {
 
 // Do runs the request through the transport, handle the response and returns a search.Response
 func (r Search) Do(providedCtx context.Context) (*Response, error) {
+	timeNow := time.Now()
 	var ctx context.Context
 	r.spanStarted = true
 	if instrument, ok := r.instrument.(elastictransport.Instrumentation); ok {
@@ -272,6 +274,9 @@ func (r Search) Do(providedCtx context.Context) (*Response, error) {
 
 	r.TypedKeys(true)
 
+	fmt.Printf("[search.Do] PREPARATION: %s", time.Since(timeNow).String())
+	timeNow = time.Now()
+
 	res, err := r.Perform(ctx)
 	if err != nil {
 		if instrument, ok := r.instrument.(elastictransport.Instrumentation); ok {
@@ -280,6 +285,9 @@ func (r Search) Do(providedCtx context.Context) (*Response, error) {
 		return nil, err
 	}
 	defer res.Body.Close()
+
+	fmt.Printf("[search.Do] PERFORM: %s", time.Since(timeNow).String())
+	timeNow = time.Now()
 
 	if res.StatusCode < 299 {
 		err = json.NewDecoder(res.Body).Decode(response)
@@ -292,6 +300,9 @@ func (r Search) Do(providedCtx context.Context) (*Response, error) {
 
 		return response, nil
 	}
+
+	fmt.Printf("[search.Do] DECODE: %s", time.Since(timeNow).String())
+	timeNow = time.Now()
 
 	errorResponse := types.NewElasticsearchError()
 	err = json.NewDecoder(res.Body).Decode(errorResponse)
@@ -309,6 +320,9 @@ func (r Search) Do(providedCtx context.Context) (*Response, error) {
 	if instrument, ok := r.instrument.(elastictransport.Instrumentation); ok {
 		instrument.RecordError(ctx, errorResponse)
 	}
+
+	fmt.Printf("[search.Do] FINISHING: %s", time.Since(timeNow).String())
+	timeNow = time.Now()
 	return nil, errorResponse
 }
 
